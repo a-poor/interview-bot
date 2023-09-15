@@ -1,11 +1,15 @@
 package main
 
 import (
+	_ "github.com/charmbracelet/bubbles/list"
+	_ "github.com/charmbracelet/bubbles/textarea"
+	_ "github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 )
 
 func newApp() *tea.Program {
-	p := tea.NewProgram(newModel())
+	m := newModel()
+	p := tea.NewProgram(m, tea.WithAltScreen())
 	return p
 }
 
