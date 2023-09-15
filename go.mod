@@ -8,6 +8,7 @@ require (
 	github.com/charmbracelet/glamour v0.6.0
 	github.com/charmbracelet/lipgloss v0.8.0
 	github.com/urfave/cli/v2 v2.25.7
+	go.etcd.io/bbolt v1.3.7
 )
 
 require (
